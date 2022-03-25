@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>3</td>
+                <td>5</td>
+                <td>102</td>
+                <td>7</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>4%</td>
+                <td>2%</td>
+                <td>3%</td>
+                <td>60%</td>
+                <td>4%</td>
+                <td>58%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Google Fonts&gt; 💥💥💥💥💥💥🔥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking OS/2 achVendID.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/vendor_id&gt;</div>
+<details><summary>⚠️ <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+[code: unknown]</p>
+</span></li></ul></div></details>
+<h3>Check `Google Fonts Latin Core` glyph coverage.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/glyph_coverage&gt;</div>
+<details><summary>🔥 <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
+<pre><code>- 0x00A4 (CURRENCY SIGN)
+
+- 0x00AD (SOFT HYPHEN)
+
+- 0x00C2 (LATIN CAPITAL LETTER A WITH CIRCUMFLEX)
+
+- 0x02BB (MODIFIER LETTER TURNED COMMA)
+
+- 0x2002 (EN SPACE)
+
+- 0x2009 (THIN SPACE)
+
+- 0x200B (ZERO WIDTH SPACE)
+
+- 0x2032 (PRIME)
+
+- 0x2033 (DOUBLE PRIME)
+
+- 0x2122 (TRADE MARK SIGN)
+
+- And 4 more.
+</code></pre>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: missing-codepoints]</p>
+</span></li></ul></div></details>
+<h3>Check METADATA.pb includes production subsets.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/includes_production_subsets&gt;</div>
+<details><summary>💥 <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>The condition <a href="FontBakeryCondition:production_metadata">FontBakeryCondition:production_metadata</a> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)</p>
+</span></li></ul></div></details>
+<h3>Version number has increased since previous release on Google Fonts?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/version_bump&gt;</div>
+<details><summary>💥 <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>The condition <a href="FontBakeryCondition:api_gfonts_ttFont">FontBakeryCondition:api_gfonts_ttFont</a> had an error: FailedConditionError: The condition <a href="FontBakeryCondition:remote_styles">FontBakeryCondition:remote_styles</a> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)</p>
+</span></li></ul></div></details>
+<h3>Glyphs are similiar to Google Fonts version?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/production_glyphs_similarity&gt;</div>
+<details><summary>💥 <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>The condition <a href="FontBakeryCondition:api_gfonts_ttFont">FontBakeryCondition:api_gfonts_ttFont</a> had an error: FailedConditionError: The condition <a href="FontBakeryCondition:remote_styles">FontBakeryCondition:remote_styles</a> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)</p>
+</span></li></ul></div></details>
+<h3>Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/vertical_metrics_regressions&gt;</div>
+<details><summary>💥 <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>The condition <a href="FontBakeryCondition:regular_remote_style">FontBakeryCondition:regular_remote_style</a> had an error: FailedConditionError: The condition <a href="FontBakeryCondition:remote_styles">FontBakeryCondition:remote_styles</a> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)</p>
+</span></li></ul></div></details>
+<h3>Check font follows the Google Fonts CJK vertical metric schema</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/cjk_vertical_metrics&gt;</div>
+<details><summary>💥 <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>The condition <a href="FontBakeryCondition:remote_styles">FontBakeryCondition:remote_styles</a> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)</p>
+</span></li></ul></div></details>
+<h3>Check if the vertical metrics of a CJK family are similar to the same family hosted on Google Fonts.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/cjk_vertical_metrics_regressions&gt;</div>
+<details><summary>💥 <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>The condition <a href="FontBakeryCondition:regular_remote_style">FontBakeryCondition:regular_remote_style</a> had an error: FailedConditionError: The condition <a href="FontBakeryCondition:remote_styles">FontBakeryCondition:remote_styles</a> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)</p>
+</span></li></ul></div></details>
+<h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/meta/script_lang_tags&gt;</div>
+<details><summary>⚠️ <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Universal&gt; 🔥⚠️⏩⏩⏩⏩⏩ℹ️ℹ️</h2>
+<h3>Checking OS/2 usWinAscent & usWinDescent.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+<details><summary>🔥 <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 415, but got 307 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<h3>Check font contains no unreachable glyphs</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+<details><summary>⚠️ <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- one.dnom
+- zero.dnom
+- uni0328.case
+- uni0306.case
+- uni0304.case
+- two.dnom
+- uni030B.case
+- four.dnom
+- nine.numr
+- uni0307.case
+- And 21 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.hmtx&gt; 🔥</h2>
+<h3>Space and non-breaking space have the same width?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/whitespace_widths&gt;</div>
+<details><summary>🔥 <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Space and non-breaking space have differing width: The space glyph named space is 211 font units wide, non-breaking space named (uni00A0) is 245 font units wide, and both should be positive and the same. GlyphsApp has &quot;Sidebearing arithmetic&quot; (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>fonts/ttf/Solitreo-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* parenleft (U+0028): X=308.0,Y=701.5 (should be at cap-height 700?)
+* parenright (U+0029): X=31.0,Y=701.5 (should be at cap-height 700?)
+* one (U+0031): X=265.0,Y=699.0 (should be at cap-height 700?)
+* bracketright (U+005D): X=33.5,Y=701.5 (should be at cap-height 700?)
+* asciicircum (U+005E): X=168.0,Y=701.0 (should be at cap-height 700?)
+* asciicircum (U+005E): X=264.0,Y=701.0 (should be at cap-height 700?)
+* grave (U+0060): X=72.0,Y=701.0 (should be at cap-height 700?)
+* section (U+00A7): X=71.0,Y=-2.0 (should be at baseline 0?)
+* acute (U+00B4): X=265.0,Y=701.0 (should be at cap-height 700?)
+* agrave (U+00E0): X=126.0,Y=701.0 (should be at cap-height 700?) and 63 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>
