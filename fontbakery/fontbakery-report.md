@@ -151,16 +151,16 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- brevecombcy.case
-	- nine.dnom
-	- uni0327.case
-	- seven.dnom
 	- uni0304.case
+	- uni030C.alt
 	- one.numr
-	- one.dnom
-	- qudblrit_qudblrit_qudblrit
-	- six.numr
-	- uni0306.case 
+	- three.numr
+	- two.numr
+	- uni0327.case
+	- five.numr
+	- qudblleft_qudblleft_qudblleft
+	- brevecombcy.case
+	- eight.dnom 
 	- And 26 more.
 
 Use -F or --full-lists to disable shortening of long lists.
