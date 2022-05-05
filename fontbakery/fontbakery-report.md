@@ -151,17 +151,8 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- uni0304.case
-	- brevecombcy.case
-	- uni0326.case
-	- uni0327.case
-	- uni030C.case
-	- uni0328.case
-	- uni030C.alt
-	- uni0307.case
-	- uni0306.case
 	- brevecombcy 
-	- And uni030B.case
+	- And uni030C.alt
  [code: unreachable-glyphs]
 
 </details>
